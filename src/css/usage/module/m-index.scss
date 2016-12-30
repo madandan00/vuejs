@@ -56,6 +56,25 @@
     footer{
         height: .44rem;
         background: yellow;
+        ul{
+            @include flexbox();
+            li{
+               @include flex(); 
+               b,i{
+                   display: block;
+                   text-align: center;
+               }
+               b{
+                   font-size: .12rem;
+                   line-height: .14rem;
+               }
+               i{
+                   font-size: .24rem;
+                   height: .3rem;
+                   line-height: .3rem;
+               }
+            }
+        }
         >*{
             width: 100%;
         }
